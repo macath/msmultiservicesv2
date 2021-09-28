@@ -1,3 +1,5 @@
+/* BASE */
+
 nav a{
     font-size: 22px;
 }
@@ -8,4 +10,38 @@ nav a{
 
 .titleColor{
     color: #E54C10;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: #45495E;
+    color: #fff;
+    height: 30px;
+}
+
+.lienf{
+    text-decoration: none;
+    color: white;
+}
+
+.lienf:hover{
+    text-decoration: none;
+    color: #E54C10;
+}
+
+/* PRESTATIONS */
+
+.prestaCard{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    height: 220px;
+    width: 450px;
+    background-color: #D6C8C2;
+    text-shadow: 1px 1px black;
+    box-shadow: 2px 2px 2px black;
+    border: solid 3px #6E5549;
+}
+
+.prestaTitle{
+    font-size: 30px;
 }
