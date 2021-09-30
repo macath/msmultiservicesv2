@@ -1,4 +1,4 @@
-/* BASE */
+/* GENERAL */
 
 nav a{
     font-size: 22px;
@@ -16,7 +16,6 @@ footer{
     margin-top: 150px;
     background-color: #45495E;
     color: #fff;
-    height: 30px;
 }
 
 .lienf{
@@ -29,6 +28,23 @@ footer{
     color: #E54C10;
 }
 
+.lienf2{
+    text-decoration: none;
+    color: black;
+}
+
+.lienf2:hover{
+    text-decoration: none;
+    color: #E54C10;
+}
+
+.divider{
+    width: 200px;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+}
+
 /* PRESTATIONS */
 
 .prestaCard{
@@ -38,10 +54,42 @@ footer{
     width: 450px;
     background-color: #D6C8C2;
     text-shadow: 1px 1px black;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 10px black;
     border: solid 3px #6E5549;
 }
 
 .prestaTitle{
     font-size: 30px;
+}
+
+#lienadmin{
+    margin-top: 50px;
+    font-size: 10px;
+}
+
+/* CONTACT */
+
+.contactCard{
+    height: 300px;
+    width: 65%;
+    background-color: #D6C8C2;
+    text-shadow: 1px 1px black;
+    box-shadow: 2px 2px 10px black;
+    border: solid 3px #6E5549;
+    margin: 80px auto 0;
+}
+
+.seb{
+    width: 100%;
+    box-shadow: 2px 2px 10px black;
+    border: solid 1px #6E5549;
+    border-radius: 10px;
+}
+
+.formulaire{
+    margin-top: 80px;
+}
+
+.formulaire div{
+    margin-bottom: 10px;
 }

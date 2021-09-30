@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#">Galerie</a>
                     </li>
                     <li class="nav-item ml-lg-4">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{{ path('contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -77,9 +77,11 @@
             {% block content %}
             {% endblock %}
         </div>
-
+          
         <footer class="text-center">
-            © M&S Multi-Services - Tous droits réservés // <a href="#" class="lienf">Mentions légales</a>
+            <p class="pt-2">© M&S Multi-Services - Tous droits réservés</p>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="{{ path('legal_conditions') }}" class="lienf">Mentions légales</a>
         </footer>
     </body>
 
