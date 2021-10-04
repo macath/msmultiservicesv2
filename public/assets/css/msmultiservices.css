@@ -86,10 +86,24 @@ footer{
     border-radius: 10px;
 }
 
-.formulaire{
-    margin-top: 80px;
+/* GALERIE */
+
+.galerieTitle{
+    font-size: 30px;
 }
 
-.formulaire div{
-    margin-bottom: 10px;
+.cardItem{
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 1px 1px 10px black;
+}
+
+.textItem{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filtreStyle{
+    margin-top: 10px;
+    margin-left: 30px;
 }

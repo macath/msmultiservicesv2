@@ -13,19 +13,19 @@ class ContactController extends AbstractController
     /**
      * @Route("/contact", name="contact")
      */
-    public function index(Request $request): Response
+    public function index(): Response
     {
-        $form = $this->createForm(ContactType::class);
-        $form->handleRequest($request);
+        // $form = $this->createForm(ContactType::class);
+        // $form->handleRequest($request);
 
-        if($form->isSubmitted() && $form->isValid()) {
-            $this->addFlash('notice', 'Merci de nous avoir contacté. Nous vous répondrons dans les plus brefs délais !');
+        // if($form->isSubmitted() && $form->isValid()) {
+        //     $this->addFlash('notice', 'Merci de nous avoir contacté. Nous vous répondrons dans les plus brefs délais !');
 
-            // Envoi du mail
-        }
+        //     // Envoi du mail
+        // }
 
-        return $this->render('contact/index.html.twig', [
-            'form' => $form->createView()
-        ]);
+        return $this->render('contact/index.html.twig'
+        //, ['form' => $form->createView()]
+        );
     }
 }

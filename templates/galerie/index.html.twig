@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Galerie - M&S Multi-Services{% endblock %}
+
+{% block content %}
+    <h3 class="text-center mt-5 mb-5 galerieTitle">Galerie</h3>
+    
+    <div class="container">
+        <hr>
+        <h4>Filtrer</h4>
+        {{ form(form) }}
+        <hr>
+    </div>
+    
+    {% for items in item %}
+        <div class="row">
+            <div class="card cardItem">
+                <img src="/uploads/{{ items.image }}" class="img-fluid">
+                <div class="card-body">
+                <p class="card-text text-center textItem">{{ items.description }}</p>
+                </div>
+            </div>
+        </div> 
+    {% endfor %}    
+{% endblock %}
