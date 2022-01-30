@@ -17,7 +17,7 @@ class GalerieController extends AbstractController
      */
     public function index(Request $request, ItemsRepository $itemsRep): Response
     {
-        $item = $itemsRep->findAll();
+        $item = $itemsRep->findBy([],['id'=>'DESC'],10);
 
         $search = new Search();
         $form = $this->createForm(SearchType::class, $search);
@@ -28,7 +28,7 @@ class GalerieController extends AbstractController
             //$search = $form->getData(); REDONDANT DANS CE CAS
             $item = $itemsRep->findWithSearch($search);
         } else {
-            $item = $itemsRep->findAll();
+            $item = $itemsRep->findBy([],['id'=>'DESC'],10);
         }
 
         return $this->render('galerie/index.html.twig', [
